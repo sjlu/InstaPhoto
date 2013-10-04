@@ -20,8 +20,12 @@
   favoritesViewController.title = @"Favorites";
   favoritesViewController.view.backgroundColor = [UIColor redColor];
 
+  UIViewController *profileViewController = [[UIViewController alloc] init];
+  profileViewController.title = @"Profile";
+  profileViewController.view.backgroundColor = [UIColor redColor];
+
   UITabBarController *tabBarController = [[UITabBarController alloc] init];
-  [tabBarController setViewControllers:@[feedViewController, favoritesViewController]];
+  [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]];
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   self.window.rootViewController = tabBarController;
