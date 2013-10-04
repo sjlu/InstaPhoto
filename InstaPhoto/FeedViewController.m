@@ -28,6 +28,12 @@
 {
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor blueColor];
+
+  UIImageView *victoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"victory.jpg"]];
+  [victoryView setContentMode:UIViewContentModeScaleAspectFit];
+  victoryView.frame = self.view.frame;
+  [self.view addSubview:victoryView];
+
 	// Do any additional setup after loading the view.
 }
 
