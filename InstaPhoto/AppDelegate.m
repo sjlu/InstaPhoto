@@ -12,8 +12,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+  UIViewController *feedViewController = [[UIViewController alloc] init];
+  feedViewController.title = @"Feed";
+  feedViewController.view.backgroundColor = [UIColor blueColor];
+
+  UIViewController *favoritesViewController = [[UIViewController alloc] init];
+  favoritesViewController.title = @"Favorites";
+  favoritesViewController.view.backgroundColor = [UIColor redColor];
+
+  UITabBarController *tabBarController = [[UITabBarController alloc] init];
+  [tabBarController setViewControllers:@[feedViewController, favoritesViewController]];
+
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.rootViewController = tabBarController;
+  [self.window makeKeyAndVisible];
+
+  return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
