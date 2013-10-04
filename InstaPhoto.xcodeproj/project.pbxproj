@@ -22,6 +22,12 @@
 		15A2475517FE5D5F00C83CE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A2473417FE5D5F00C83CE5 /* UIKit.framework */; };
 		15A2475D17FE5D5F00C83CE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A2475B17FE5D5F00C83CE5 /* InfoPlist.strings */; };
 		15A2475F17FE5D5F00C83CE5 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A2475E17FE5D5F00C83CE5 /* InstaPhotoTests.m */; };
+		15A2476E17FE619500C83CE5 /* 145-persondot.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A2476C17FE619500C83CE5 /* 145-persondot.png */; };
+		15A2476F17FE619500C83CE5 /* 145-persondot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A2476D17FE619500C83CE5 /* 145-persondot@2x.png */; };
+		15A2477217FE62A800C83CE5 /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A2477017FE62A800C83CE5 /* 28-star.png */; };
+		15A2477317FE62A800C83CE5 /* 28-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A2477117FE62A800C83CE5 /* 28-star@2x.png */; };
+		15A2477617FE632100C83CE5 /* 259-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A2477417FE632100C83CE5 /* 259-list.png */; };
+		15A2477717FE632100C83CE5 /* 259-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A2477517FE632100C83CE5 /* 259-list@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		15A2475A17FE5D5F00C83CE5 /* InstaPhotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaPhotoTests-Info.plist"; sourceTree = "<group>"; };
 		15A2475C17FE5D5F00C83CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15A2475E17FE5D5F00C83CE5 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
+		15A2476C17FE619500C83CE5 /* 145-persondot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "145-persondot.png"; sourceTree = "<group>"; };
+		15A2476D17FE619500C83CE5 /* 145-persondot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "145-persondot@2x.png"; sourceTree = "<group>"; };
+		15A2477017FE62A800C83CE5 /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
+		15A2477117FE62A800C83CE5 /* 28-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star@2x.png"; sourceTree = "<group>"; };
+		15A2477417FE632100C83CE5 /* 259-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list.png"; sourceTree = "<group>"; };
+		15A2477517FE632100C83CE5 /* 259-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "259-list@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,12 @@
 		15A2473617FE5D5F00C83CE5 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				15A2477417FE632100C83CE5 /* 259-list.png */,
+				15A2477517FE632100C83CE5 /* 259-list@2x.png */,
+				15A2477017FE62A800C83CE5 /* 28-star.png */,
+				15A2477117FE62A800C83CE5 /* 28-star@2x.png */,
+				15A2476C17FE619500C83CE5 /* 145-persondot.png */,
+				15A2476D17FE619500C83CE5 /* 145-persondot@2x.png */,
 				15A2473F17FE5D5F00C83CE5 /* AppDelegate.h */,
 				15A2474017FE5D5F00C83CE5 /* AppDelegate.m */,
 				15A2474217FE5D5F00C83CE5 /* Main_iPhone.storyboard */,
@@ -231,9 +249,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A2477217FE62A800C83CE5 /* 28-star.png in Resources */,
+				15A2476F17FE619500C83CE5 /* 145-persondot@2x.png in Resources */,
 				15A2474717FE5D5F00C83CE5 /* Main_iPad.storyboard in Resources */,
 				15A2474C17FE5D5F00C83CE5 /* Images.xcassets in Resources */,
+				15A2477317FE62A800C83CE5 /* 28-star@2x.png in Resources */,
+				15A2477617FE632100C83CE5 /* 259-list.png in Resources */,
 				15A2474417FE5D5F00C83CE5 /* Main_iPhone.storyboard in Resources */,
+				15A2477717FE632100C83CE5 /* 259-list@2x.png in Resources */,
+				15A2476E17FE619500C83CE5 /* 145-persondot.png in Resources */,
 				15A2473B17FE5D5F00C83CE5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
