@@ -7,25 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "FeedViewController.h"
+#import "ProfileViewController.h"
+#import "FavoritesViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  UIViewController *feedViewController = [[UIViewController alloc] init];
-  feedViewController.title = @"Feed";
-  feedViewController.view.backgroundColor = [UIColor blueColor];
-  feedViewController.tabBarItem.image = [UIImage imageNamed:@"259-list"];
-
-  UIViewController *favoritesViewController = [[UIViewController alloc] init];
-  favoritesViewController.title = @"Favorites";
-  favoritesViewController.view.backgroundColor = [UIColor redColor];
-  favoritesViewController.tabBarItem.image = [UIImage imageNamed:@"28-star"];
-
-  UIViewController *profileViewController = [[UIViewController alloc] init];
-  profileViewController.title = @"Profile";
-  profileViewController.view.backgroundColor = [UIColor redColor];
-  profileViewController.tabBarItem.image = [UIImage imageNamed:@"145-persondot"];
+  FeedViewController *feedViewController = [[FeedViewController alloc] init];
+  FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
+  ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
 
   UITabBarController *tabBarController = [[UITabBarController alloc] init];
   [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]];
