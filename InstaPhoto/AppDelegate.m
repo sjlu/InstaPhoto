@@ -19,11 +19,14 @@
   FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
   ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
 
-  UITabBarController *tabBarController = [[UITabBarController alloc] init];
-  [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]];
+  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+
+//  UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//  [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]];
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  self.window.rootViewController = tabBarController;
+//  self.window.rootViewController = tabBarController;
+  self.window.rootViewController = navController;
   [self.window makeKeyAndVisible];
 
   return YES;
