@@ -32,6 +32,8 @@
 		15A2477D17FE659500C83CE5 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A2477C17FE659500C83CE5 /* ProfileViewController.m */; };
 		15A2478017FE65F700C83CE5 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A2477F17FE65F700C83CE5 /* FavoritesViewController.m */; };
 		15A2478217FE692200C83CE5 /* victory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A2478117FE692200C83CE5 /* victory.jpg */; };
+		15B5E4981800A58E00449CE8 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B5E4971800A58E00449CE8 /* FeedTableViewController.m */; };
+		15E0FCBC1800D26500CDC899 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E0FCBB1800D26500CDC899 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		15A2477E17FE65F700C83CE5 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		15A2477F17FE65F700C83CE5 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		15A2478117FE692200C83CE5 /* victory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = victory.jpg; sourceTree = "<group>"; };
+		15B5E4961800A58E00449CE8 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		15B5E4971800A58E00449CE8 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		15E0FCBA1800D26500CDC899 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		15E0FCBB1800D26500CDC899 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,10 @@
 				15A2477C17FE659500C83CE5 /* ProfileViewController.m */,
 				15A2477817FE64DD00C83CE5 /* FeedViewController.h */,
 				15A2477917FE64DD00C83CE5 /* FeedViewController.m */,
+				15B5E4961800A58E00449CE8 /* FeedTableViewController.h */,
+				15B5E4971800A58E00449CE8 /* FeedTableViewController.m */,
+				15E0FCBA1800D26500CDC899 /* PhotoViewController.h */,
+				15E0FCBB1800D26500CDC899 /* PhotoViewController.m */,
 				15A2474217FE5D5F00C83CE5 /* Main_iPhone.storyboard */,
 				15A2474517FE5D5F00C83CE5 /* Main_iPad.storyboard */,
 				15A2474817FE5D5F00C83CE5 /* ViewController.h */,
@@ -297,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A2474A17FE5D5F00C83CE5 /* ViewController.m in Sources */,
+				15E0FCBC1800D26500CDC899 /* PhotoViewController.m in Sources */,
 				15A2474117FE5D5F00C83CE5 /* AppDelegate.m in Sources */,
 				15A2478017FE65F700C83CE5 /* FavoritesViewController.m in Sources */,
+				15B5E4981800A58E00449CE8 /* FeedTableViewController.m in Sources */,
 				15A2477A17FE64DD00C83CE5 /* FeedViewController.m in Sources */,
 				15A2473D17FE5D5F00C83CE5 /* main.m in Sources */,
 				15A2477D17FE659500C83CE5 /* ProfileViewController.m in Sources */,
@@ -520,6 +532,7 @@
 				15A2476417FE5D5F00C83CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15A2476517FE5D5F00C83CE5 /* Build configuration list for PBXNativeTarget "InstaPhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +541,7 @@
 				15A2476717FE5D5F00C83CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

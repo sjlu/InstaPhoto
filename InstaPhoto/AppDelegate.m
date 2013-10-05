@@ -10,23 +10,24 @@
 #import "FeedViewController.h"
 #import "ProfileViewController.h"
 #import "FavoritesViewController.h"
+#import "FeedTableViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  FeedViewController *feedViewController = [[FeedViewController alloc] init];
+//  FeedViewController *feedViewController = [[FeedViewController alloc] init];
+  FeedTableViewController *feedTableViewController = [[FeedTableViewController alloc] init];
   FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
   ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
 
-  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+  UINavigationController *feedNavController = [[UINavigationController alloc] initWithRootViewController:feedTableViewController];
 
-//  UITabBarController *tabBarController = [[UITabBarController alloc] init];
-//  [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]];
+  UITabBarController *tabBarController = [[UITabBarController alloc] init];
+  [tabBarController setViewControllers:@[feedNavController, favoritesViewController, profileViewController]];
 
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//  self.window.rootViewController = tabBarController;
-  self.window.rootViewController = navController;
+  self.window.rootViewController = tabBarController;
   [self.window makeKeyAndVisible];
 
   return YES;

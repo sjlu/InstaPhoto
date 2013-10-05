@@ -30,12 +30,22 @@
   [super viewDidLoad];
   self.view.backgroundColor = [UIColor blueColor];
 
-  UIButton *favoritesButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-  favoritesButton.frame = CGRectMake(60, 100, 200, 44);
-  [favoritesButton setTitle:@"View Favorites" forState:UIControlStateNormal];
-  [self.view addSubview:favoritesButton];
+//  UIButton *favoritesButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//  favoritesButton.frame = CGRectMake(60, 100, 200, 44);
+//  [favoritesButton setTitle:@"View Favorites" forState:UIControlStateNormal];
+//  [self.view addSubview:favoritesButton];
 
-  [favoritesButton addTarget:self action:@selector(showFavorites:) forControlEvents:UIControlEventTouchUpInside];
+//  [favoritesButton addTarget:self action:@selector(showFavorites:) forControlEvents:UIControlEventTouchUpInside];
+
+  UIButton *buttonView = [UIButton buttonWithType:UIButtonTypeCustom];
+  [buttonView setImage:[UIImage imageNamed:@"victory.jpg"] forState:UIControlStateNormal];
+  [buttonView setImage:[UIImage imageNamed:@"victory.jpg"] forState:UIControlStateHighlighted];
+  [buttonView setFrame:CGRectMake(15, 15, 100, 100)];
+
+  [self.view addSubview:buttonView];
+
+  [buttonView addTarget:self action:@selector(showZoomedPicture:) forControlEvents:UIControlEventTouchUpInside];
+
 	// Do any additional setup after loading the view.
 }
 
@@ -43,6 +53,21 @@
 {
   FavoritesViewController * favoritesViewController = [[FavoritesViewController alloc] init];
   [self.navigationController pushViewController:favoritesViewController animated:YES];
+}
+
+- (void)showZoomedPicture:(UIButton *) sender
+{
+  UIViewController *imageViewController = [[UIViewController alloc] init];
+  imageViewController.view.frame = self.view.frame;
+  imageViewController.title = @"Image";
+
+  UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"victory.jpg"]];
+  [imageView setContentMode:UIViewContentModeScaleAspectFit];
+
+  imageView.frame = imageViewController.view.frame;
+  [imageViewController.view addSubview:imageView];
+
+  [self.navigationController pushViewController:imageViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
